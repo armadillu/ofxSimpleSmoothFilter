@@ -58,6 +58,12 @@ void testApp::draw(){
 		y += h;
 
 	}
+
+	if (mouseY < ofGetHeight()/2){
+		ofDrawBitmapString( "CHARGING!", ofGetWidth() - 100,ofGetHeight() - 20 );
+	}else{
+		ofDrawBitmapString( "DIS-CHARGING!", ofGetWidth() - 100,ofGetHeight() - 20 );
+	}
 }
 
 //--------------------------------------------------------------
